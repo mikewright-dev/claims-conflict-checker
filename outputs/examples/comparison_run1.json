@@ -1,0 +1,286 @@
+{
+  "conflicts": [
+    {
+      "field": "conservative_care_required",
+      "sides": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "months"
+          },
+          "sources": [
+            {
+              "file": "medical_policy_MP-214.pdf",
+              "page": 1,
+              "quote": "(b) At least 3 months of failed conservative care, including physical therapy.",
+              "raw": "At least 3 months"
+            }
+          ]
+        },
+        {
+          "value": {
+            "amount": 6,
+            "unit": "months"
+          },
+          "sources": [
+            {
+              "file": "denial_letter.pdf",
+              "page": 2,
+              "quote": "Medical policy MP-214 requires documentation of at least 6 months of failed conservative care before lumbar spinal fusion can be considered medically necessary.",
+              "raw": "at least 6 months"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "fusion_level",
+      "sides": [
+        {
+          "value": "L4-L5",
+          "sources": [
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 4,
+              "quote": "Planned procedure: L4-L5 posterior lumbar interbody fusion (PLIF), single level; CPT 22630",
+              "raw": "L4-L5"
+            }
+          ]
+        },
+        {
+          "value": "L5-S1",
+          "sources": [
+            {
+              "file": "denial_letter.pdf",
+              "page": 1,
+              "quote": "Service Reviewed: L5-S1 lumbar spinal fusion",
+              "raw": "L5-S1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "injections",
+      "sides": [
+        {
+          "value": {
+            "count": 0,
+            "dates": []
+          },
+          "sources": [
+            {
+              "file": "denial_letter.pdf",
+              "page": 2,
+              "quote": "There is no interventional pain management attempted in the submitted records (for example, epidural steroid injection or other image-guided spinal injection).",
+              "raw": "no interventional pain management attempted in the submitted records (for example, epidural steroid injection or other image-guided spinal injection)"
+            }
+          ]
+        },
+        {
+          "value": {
+            "count": 2,
+            "dates": [
+              "2025-11-12",
+              "2025-12-17"
+            ]
+          },
+          "sources": [
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 2,
+              "quote": "Epidural steroid injections on 11/12/2025 and 12/17/2025 provided temporary relief only, with no durable improvement in leg pain or walking tolerance.",
+              "raw": "Epidural steroid injections on 11/12/2025 and 12/17/2025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "motor_strength",
+      "sides": [
+        {
+          "value": 4,
+          "sources": [
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 3,
+              "quote": "Motor: Progressive left foot dorsiflexion weakness, 4/5. All other lower extremity muscle groups 5/5.",
+              "raw": "Progressive left foot dorsiflexion weakness, 4/5. All other lower extremity muscle groups 5/5"
+            }
+          ]
+        },
+        {
+          "value": 5,
+          "sources": [
+            {
+              "file": "pt_discharge_summary.pdf",
+              "page": 3,
+              "quote": "Summary: strength 5/5 in both lower extremities.",
+              "raw": "strength 5/5 in both lower extremities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "pt_duration",
+      "sides": [
+        {
+          "value": {
+            "amount": 14,
+            "unit": "weeks"
+          },
+          "sources": [
+            {
+              "file": "pt_discharge_summary.pdf",
+              "page": 2,
+              "quote": "The patient attended 24 visits over 14 weeks (10/01/2025 to 01/08/2026)",
+              "raw": "14 weeks"
+            },
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 2,
+              "quote": "Completed physical therapy for 14 weeks at Prairie Path Physical Therapy (10/01/2025 to 01/08/2026; 24 visits)",
+              "raw": "14 weeks"
+            }
+          ]
+        },
+        {
+          "value": {
+            "amount": 4,
+            "unit": "weeks"
+          },
+          "sources": [
+            {
+              "file": "denial_letter.pdf",
+              "page": 2,
+              "quote": "The records reflect only 4 weeks of physical therapy documented.",
+              "raw": "4 weeks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "smoking_status",
+      "sides": [
+        {
+          "value": "current",
+          "sources": [
+            {
+              "file": "pt_discharge_summary.pdf",
+              "page": 1,
+              "quote": "Social history: current smoker, 1/2 pack per day.",
+              "raw": "current smoker, 1/2 pack per day"
+            }
+          ]
+        },
+        {
+          "value": "former",
+          "sources": [
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 1,
+              "quote": "former smoker, quit 2019. Occasional alcohol use. Lives with spouse. Retired school administrator.",
+              "raw": "former smoker, quit 2019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "spondylolisthesis_grade",
+      "sides": [
+        {
+          "value": 1,
+          "sources": [
+            {
+              "file": "mri_report.pdf",
+              "page": 1,
+              "quote": "L4-5: Grade I anterolisthesis of L4 on L5, approximately 6 mm",
+              "raw": "Grade I"
+            }
+          ]
+        },
+        {
+          "value": 2,
+          "sources": [
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 3,
+              "quote": "demonstrates Grade II spondylolisthesis at L4-L5 with bilateral facet arthropathy and moderate left foraminal stenosis.",
+              "raw": "Grade II"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "surgery_date",
+      "sides": [
+        {
+          "value": "2026-03-14",
+          "sources": [
+            {
+              "file": "denial_letter.pdf",
+              "page": 1,
+              "quote": "Planned Date of Service: 03/14/2026",
+              "raw": "03/14/2026"
+            }
+          ]
+        },
+        {
+          "value": "2026-03-21",
+          "sources": [
+            {
+              "file": "surgeon_consult_note.pdf",
+              "page": 4,
+              "quote": "Surgery date: Scheduled for 03/21/2026",
+              "raw": "03/21/2026"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "agreements": [
+    {
+      "field": "mri_date",
+      "value": "2026-01-20",
+      "sources": [
+        {
+          "file": "mri_report.pdf",
+          "page": 1,
+          "quote": "EXAM DATE: January 20, 2026",
+          "raw": "January 20, 2026"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 3,
+          "quote": "MRI of the lumbar spine dated 01/20/2026 (Lakeview Imaging Center) was personally reviewed",
+          "raw": "01/20/2026"
+        }
+      ]
+    },
+    {
+      "field": "pt_visit_count",
+      "value": 24,
+      "sources": [
+        {
+          "file": "pt_discharge_summary.pdf",
+          "page": 2,
+          "quote": "The patient attended 24 visits over 14 weeks (10/01/2025 to 01/08/2026)",
+          "raw": "24"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 2,
+          "quote": "Completed physical therapy for 14 weeks at Prairie Path Physical Therapy (10/01/2025 to 01/08/2026; 24 visits)",
+          "raw": "24 visits"
+        }
+      ]
+    }
+  ],
+  "uncomparable": []
+}
