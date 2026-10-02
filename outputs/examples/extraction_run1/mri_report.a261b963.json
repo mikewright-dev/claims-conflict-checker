@@ -1,0 +1,52 @@
+{
+  "conservative_care_required": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "fusion_level": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "injections": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "motor_strength": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "mri_date": {
+    "page": 1,
+    "quote": "EXAM DATE: January 20, 2026",
+    "value": "January 20, 2026"
+  },
+  "pt_duration": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "pt_visit_count": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "smoking_status": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "spondylolisthesis_grade": {
+    "page": 1,
+    "quote": "L4-5: Grade I anterolisthesis of L4 on L5, approximately 6 mm",
+    "value": "Grade I"
+  },
+  "surgery_date": {
+    "page": null,
+    "quote": null,
+    "value": null
+  }
+}

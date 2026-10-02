@@ -1,0 +1,52 @@
+{
+  "conservative_care_required": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "fusion_level": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "injections": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "motor_strength": {
+    "page": 3,
+    "quote": "Summary: strength 5/5 in both lower extremities.",
+    "value": "strength 5/5 in both lower extremities"
+  },
+  "mri_date": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "pt_duration": {
+    "page": 2,
+    "quote": "The patient attended 24 visits over 14 weeks (10/01/2025 to 01/08/2026)",
+    "value": "14 weeks"
+  },
+  "pt_visit_count": {
+    "page": 2,
+    "quote": "The patient attended 24 visits over 14 weeks (10/01/2025 to 01/08/2026)",
+    "value": "24"
+  },
+  "smoking_status": {
+    "page": 1,
+    "quote": "Social history: current smoker, 1/2 pack per day.",
+    "value": "current smoker, 1/2 pack per day"
+  },
+  "spondylolisthesis_grade": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "surgery_date": {
+    "page": null,
+    "quote": null,
+    "value": null
+  }
+}

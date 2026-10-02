@@ -1,0 +1,52 @@
+{
+  "conservative_care_required": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "fusion_level": {
+    "page": 4,
+    "quote": "Planned procedure: L4-L5 posterior lumbar interbody fusion (PLIF), single level; CPT 22630",
+    "value": "L4-L5"
+  },
+  "injections": {
+    "page": 2,
+    "quote": "Epidural steroid injections on 11/12/2025 and 12/17/2025 provided temporary relief only, with no durable improvement in leg pain or walking tolerance.",
+    "value": "Epidural steroid injections on 11/12/2025 and 12/17/2025"
+  },
+  "motor_strength": {
+    "page": 3,
+    "quote": "Motor: Progressive left foot dorsiflexion weakness, 4/5. All other lower extremity muscle groups 5/5.",
+    "value": "Progressive left foot dorsiflexion weakness, 4/5. All other lower extremity muscle groups 5/5"
+  },
+  "mri_date": {
+    "page": 3,
+    "quote": "MRI of the lumbar spine dated 01/20/2026 (Lakeview Imaging Center) was personally reviewed",
+    "value": "01/20/2026"
+  },
+  "pt_duration": {
+    "page": 2,
+    "quote": "Completed physical therapy for 14 weeks at Prairie Path Physical Therapy (10/01/2025 to 01/08/2026; 24 visits)",
+    "value": "14 weeks"
+  },
+  "pt_visit_count": {
+    "page": 2,
+    "quote": "Completed physical therapy for 14 weeks at Prairie Path Physical Therapy (10/01/2025 to 01/08/2026; 24 visits)",
+    "value": "24 visits"
+  },
+  "smoking_status": {
+    "page": 1,
+    "quote": "former smoker, quit 2019. Occasional alcohol use. Lives with spouse. Retired school administrator.",
+    "value": "former smoker, quit 2019"
+  },
+  "spondylolisthesis_grade": {
+    "page": 3,
+    "quote": "demonstrates Grade II spondylolisthesis at L4-L5 with bilateral facet arthropathy and moderate left foraminal stenosis.",
+    "value": "Grade II"
+  },
+  "surgery_date": {
+    "page": 4,
+    "quote": "Surgery date: Scheduled for 03/21/2026",
+    "value": "03/21/2026"
+  }
+}

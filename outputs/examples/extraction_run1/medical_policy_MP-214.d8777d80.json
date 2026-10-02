@@ -1,0 +1,52 @@
+{
+  "conservative_care_required": {
+    "page": 1,
+    "quote": "(b) At least 3 months of failed conservative care, including physical therapy.",
+    "value": "At least 3 months"
+  },
+  "fusion_level": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "injections": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "motor_strength": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "mri_date": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "pt_duration": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "pt_visit_count": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "smoking_status": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "spondylolisthesis_grade": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "surgery_date": {
+    "page": null,
+    "quote": null,
+    "value": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "conservative_care_required": {
+    "page": 2,
+    "quote": "Medical policy MP-214 requires documentation of at least 6 months of failed conservative care before lumbar spinal fusion can be considered medically necessary.",
+    "value": "at least 6 months"
+  },
+  "fusion_level": {
+    "page": 1,
+    "quote": "Service Reviewed: L5-S1 lumbar spinal fusion",
+    "value": "L5-S1"
+  },
+  "injections": {
+    "page": 2,
+    "quote": "There is no interventional pain management attempted in the submitted records (for example, epidural steroid injection or other image-guided spinal injection).",
+    "value": "no interventional pain management attempted in the submitted records (for example, epidural steroid injection or other image-guided spinal injection)"
+  },
+  "motor_strength": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "mri_date": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "pt_duration": {
+    "page": 2,
+    "quote": "The records reflect only 4 weeks of physical therapy documented.",
+    "value": "4 weeks"
+  },
+  "pt_visit_count": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "smoking_status": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "spondylolisthesis_grade": {
+    "page": null,
+    "quote": null,
+    "value": null
+  },
+  "surgery_date": {
+    "page": 1,
+    "quote": "Planned Date of Service: 03/14/2026",
+    "value": "03/14/2026"
+  }
+}
