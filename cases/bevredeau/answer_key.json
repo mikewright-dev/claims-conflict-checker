@@ -1,0 +1,357 @@
+{
+  "case": {
+    "patient": "Mary Lou Bevredeau",
+    "dob": "06/21/1961",
+    "sex": "female",
+    "insurer": "Lakeshore Mutual Health (fictional)",
+    "member_id": "LMH-448219037",
+    "prior_authorization": "PA-2026-0219884",
+    "requested_service": "L4-L5 posterior lumbar interbody fusion",
+    "denial": "Full denial; not medically necessary under MP-214 (letter dated 02/27/2026)",
+    "synthetic": true
+  },
+  "files": [
+    "denial_letter.pdf",
+    "medical_policy_MP-214.pdf",
+    "mri_report.pdf",
+    "pt_discharge_summary.pdf",
+    "surgeon_consult_note.pdf"
+  ],
+  "location_roles": {
+    "primary": "the conflicting values themselves",
+    "corroborating": "another place in the files that states one side of the same conflict (true value or repeated claim)",
+    "context": "policy text that determines why the conflict matters"
+  },
+  "items": [
+    {
+      "id": "C1",
+      "type": "conflict",
+      "documents_involved": [
+        "denial_letter.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Planned surgery date / date of service",
+      "locations": [
+        {
+          "file": "denial_letter.pdf",
+          "page": 1,
+          "value": "Planned Date of Service: 03/14/2026",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 4,
+          "value": "Surgery date: Scheduled for 03/21/2026",
+          "role": "primary"
+        }
+      ],
+      "severity": "low",
+      "effect_on_appeal": "neutral",
+      "note": "Administrative mismatch; does not affect medical necessity."
+    },
+    {
+      "id": "C2",
+      "type": "conflict",
+      "documents_involved": [
+        "denial_letter.pdf",
+        "mri_report.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Spinal level of requested fusion",
+      "locations": [
+        {
+          "file": "denial_letter.pdf",
+          "page": 1,
+          "value": "Service Reviewed: L5-S1 lumbar spinal fusion",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 4,
+          "value": "Planned procedure: L4-L5 posterior lumbar interbody fusion (PLIF)",
+          "role": "primary"
+        },
+        {
+          "file": "mri_report.pdf",
+          "page": 1,
+          "value": "L4-5: Grade I anterolisthesis of L4 on L5",
+          "role": "corroborating"
+        },
+        {
+          "file": "mri_report.pdf",
+          "page": 2,
+          "value": "L5-S1: Mild disc desiccation. No stenosis. No listhesis.",
+          "role": "corroborating"
+        }
+      ],
+      "severity": "high",
+      "effect_on_appeal": "helps",
+      "note": "Insurer reviewed the wrong level; L5-S1 is essentially normal on MRI."
+    },
+    {
+      "id": "C3",
+      "type": "conflict",
+      "documents_involved": [
+        "denial_letter.pdf",
+        "pt_discharge_summary.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Physical therapy duration",
+      "locations": [
+        {
+          "file": "denial_letter.pdf",
+          "page": 2,
+          "value": "only 4 weeks of physical therapy documented",
+          "role": "primary"
+        },
+        {
+          "file": "pt_discharge_summary.pdf",
+          "page": 2,
+          "value": "24 visits over 14 weeks (10/01/2025 to 01/08/2026)",
+          "role": "primary"
+        },
+        {
+          "file": "pt_discharge_summary.pdf",
+          "page": 1,
+          "value": "Treatment dates 10/01/2025 to 01/08/2026",
+          "role": "corroborating"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 2,
+          "value": "Completed physical therapy for 14 weeks at Prairie Path Physical Therapy (10/01/2025 to 01/08/2026; 24 visits)",
+          "role": "corroborating"
+        }
+      ],
+      "severity": "high",
+      "effect_on_appeal": "helps",
+      "note": ""
+    },
+    {
+      "id": "C4",
+      "type": "conflict",
+      "documents_involved": [
+        "denial_letter.pdf",
+        "medical_policy_MP-214.pdf"
+      ],
+      "field": "Conservative care duration required by MP-214",
+      "locations": [
+        {
+          "file": "denial_letter.pdf",
+          "page": 2,
+          "value": "Medical policy MP-214 requires documentation of at least 6 months of failed conservative care",
+          "role": "primary"
+        },
+        {
+          "file": "medical_policy_MP-214.pdf",
+          "page": 1,
+          "value": "(b) At least 3 months of failed conservative care, including physical therapy.",
+          "role": "primary"
+        },
+        {
+          "file": "medical_policy_MP-214.pdf",
+          "page": 2,
+          "value": "conservative care requirement revised from 6 months to 3 months.",
+          "role": "corroborating"
+        }
+      ],
+      "severity": "high",
+      "effect_on_appeal": "helps",
+      "note": "Denial applied the superseded pre-2026 criterion."
+    },
+    {
+      "id": "C5",
+      "type": "conflict",
+      "documents_involved": [
+        "denial_letter.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Interventional pain management (epidural steroid injections)",
+      "locations": [
+        {
+          "file": "denial_letter.pdf",
+          "page": 2,
+          "value": "no interventional pain management attempted",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 2,
+          "value": "Epidural steroid injections on 11/12/2025 and 12/17/2025 provided temporary relief only",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 4,
+          "value": "Failure of conservative care, including physical therapy, epidural steroid injections, and oral medications.",
+          "role": "corroborating"
+        }
+      ],
+      "severity": "medium",
+      "effect_on_appeal": "helps",
+      "note": ""
+    },
+    {
+      "id": "C6",
+      "type": "conflict",
+      "documents_involved": [
+        "mri_report.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Spondylolisthesis grade at L4-L5",
+      "locations": [
+        {
+          "file": "mri_report.pdf",
+          "page": 1,
+          "value": "Grade I anterolisthesis of L4 on L5",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 3,
+          "value": "Grade II spondylolisthesis at L4-L5",
+          "role": "primary"
+        },
+        {
+          "file": "mri_report.pdf",
+          "page": 2,
+          "value": "Grade I anterolisthesis of L4 on L5 at L4-5",
+          "role": "corroborating"
+        }
+      ],
+      "severity": "high",
+      "effect_on_appeal": "hurts",
+      "note": "Surgeon overstates the radiologist's grade; insurer can cite the MRI report."
+    },
+    {
+      "id": "C7",
+      "type": "conflict",
+      "documents_involved": [
+        "pt_discharge_summary.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Lower-extremity motor strength / neurological deficit",
+      "locations": [
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 3,
+          "value": "Progressive left foot dorsiflexion weakness, 4/5",
+          "role": "primary"
+        },
+        {
+          "file": "pt_discharge_summary.pdf",
+          "page": 3,
+          "value": "strength 5/5 in both lower extremities",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 3,
+          "value": "Ankle dorsiflexion 5/5 4/5",
+          "role": "corroborating"
+        },
+        {
+          "file": "pt_discharge_summary.pdf",
+          "page": 3,
+          "value": "Ankle dorsiflexion 5/5 5/5",
+          "role": "corroborating"
+        }
+      ],
+      "severity": "medium-high",
+      "effect_on_appeal": "hurts",
+      "note": "Undercuts the 'progressive neurological deficit' path of MP-214 criterion (a). Exams are dated 01/08/2026 (PT) and 02/10/2026 (surgeon)."
+    },
+    {
+      "id": "C8",
+      "type": "conflict",
+      "documents_involved": [
+        "medical_policy_MP-214.pdf",
+        "pt_discharge_summary.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Smoking / nicotine status",
+      "locations": [
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 1,
+          "value": "former smoker, quit 2019",
+          "role": "primary"
+        },
+        {
+          "file": "pt_discharge_summary.pdf",
+          "page": 1,
+          "value": "current smoker, 1/2 pack per day",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 4,
+          "value": "Patient denies current nicotine use",
+          "role": "corroborating"
+        },
+        {
+          "file": "medical_policy_MP-214.pdf",
+          "page": 2,
+          "value": "(c) Exclusion: Active nicotine use, unless documented abstinence for at least 6 weeks before surgery",
+          "role": "context"
+        }
+      ],
+      "severity": "high",
+      "effect_on_appeal": "hurts",
+      "note": "If the PT record is accurate, MP-214 exclusion (c) applies."
+    },
+    {
+      "id": "D1",
+      "type": "decoy",
+      "documents_involved": [
+        "mri_report.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "MRI exam date (format difference only)",
+      "locations": [
+        {
+          "file": "mri_report.pdf",
+          "page": 1,
+          "value": "EXAM DATE: January 20, 2026",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 3,
+          "value": "MRI of the lumbar spine dated 01/20/2026",
+          "role": "primary"
+        }
+      ],
+      "severity": "none",
+      "effect_on_appeal": "neutral",
+      "note": "Same date, different format. Not a conflict."
+    },
+    {
+      "id": "D2",
+      "type": "decoy",
+      "documents_involved": [
+        "mri_report.pdf",
+        "surgeon_consult_note.pdf"
+      ],
+      "field": "Spinal level notation (format difference only)",
+      "locations": [
+        {
+          "file": "mri_report.pdf",
+          "page": 1,
+          "value": "L4-5",
+          "role": "primary"
+        },
+        {
+          "file": "surgeon_consult_note.pdf",
+          "page": 3,
+          "value": "L4-L5",
+          "role": "primary"
+        }
+      ],
+      "severity": "none",
+      "effect_on_appeal": "neutral",
+      "note": "Same level, different notation. Not a conflict."
+    }
+  ],
+  "value_matching": "Values are verbatim text as extracted by pdfplumber with whitespace collapsed; table cells are space-separated (e.g. 'Ankle dorsiflexion 5/5 4/5' = muscle, right, left)."
+}
